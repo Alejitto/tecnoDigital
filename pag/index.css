@@ -1,0 +1,572 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+.somosper{
+    font-size: .50em;
+}
+.somosper2{
+    color: red;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px black;
+    color: black;
+    background-color: white;
+}
+.icon img{
+    box-shadow: #2cb7c9;
+    margin: 0;
+    height: 9%;
+    /* padding: 10px; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+button:hover{
+    background-color: #00bb2d;
+    color: white;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-image:linear-gradient(45deg, rgb(255, 255, 255), rgb(192, 192, 255));
+}
+
+.logo img{
+    height: 70px;
+}
+
+header .logo{
+    margin:0;
+    padding: 10px 30px;
+}
+
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(70, 120, 197);
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,
+    url("media/heroTD.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#somosTD{
+    background-color: rgba(0, 0, 0, 0.9);
+
+}
+#somosTD .container{
+    display: flex;
+    flex-direction:column;
+    width: 800px;
+    max-width: 100%;
+    margin: 0;
+    padding: 120px 20px;
+}
+
+ul.tabs{
+    width:max-content;
+    max-width: 350px;
+    background-color: rgba(0, 0, 0, 1);
+    list-style: none;
+    display: flex; 
+    padding:10px 0px; 
+    align-items: center;
+    margin: 0px;
+    border: 1px;
+    border-radius: 5px;
+    
+}
+ul.tabs li{
+    width:none;
+    text-align: center;
+
+}
+
+ul.tabs li a {
+    color: rgba(255, 255, 255, 1); 
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+
+.active{
+    background-color: rgb(51, 111, 242);
+    
+}
+
+.conte{
+    width: 100%;
+    background: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 1%;
+    border-color: black;
+}
+.conte article{
+    padding: 15px;
+}
+.conte article p{
+    margin:0%;
+    text-align: justify;
+}
+.conte h2{
+    margin-top: 0px;
+}
+
+#Trabajos{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}
+#Trabajos .container{
+    padding: 100px 0px;
+}
+#Trabajos{
+    margin-top: 0;
+}
+
+#Trabajos h2{
+    background-color:#2cb7c9;
+}
+#Trabajos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 70px 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.carta:first-child{
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0),
+    rgba(0,0,0,0)
+)
+,url("media/diseño.png");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+    )
+    ,url("media/progra.png");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+    )
+    ,url("media/mante.png");
+}
+
+#caracteristicas .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 250px 30px;
+}
+#caracteristicas p{
+    font-weight: bold;
+}
+
+#caracteristicas .com{
+    height: 70px;
+}
+
+#caracteristicas .fil{
+    display: flex;
+    justify-content:space-around;
+
+}
+#caracteristicas .fil2{
+    display: flex;
+    justify-content: space-around;
+}
+/* contacto area */
+#contacto h1{
+    display: none;
+}
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(15deg,
+     rgb(255,255,255),rgb(192,192,255));
+     padding: 50px 15px;
+}
+#contacto .container{
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5%;
+    margin: 0;
+}
+
+#contacto h2{
+    margin: 0;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+#contacto .datos{
+    padding: 20px;
+}
+#contacto .ico{
+    height: 40px;
+
+}
+#contacto p, a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cdir div{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+#contacto .vinc1{
+    background: rgb(0, 208, 255);
+    background-image:url(media/llamada.png);
+    background-size:cover;
+    background-position: center center;
+    height: 60px;
+    width: 60px;
+    border-style: solid;
+    border-color: rgb(0, 208, 255);
+    border-radius: 10%;
+    
+    
+    
+    
+}
+#contacto .vinc2{
+    background-image:url(media/whatsapplogo.png);
+    background-size:cover;
+    background-position: center center;
+    height: 60px;
+    width: 60px;
+    border-radius: 10%;
+    margin: 0%;
+}
+#contacto .vinc3{
+    background: rgb(235, 182, 182);
+    background-image:url(media/gmail.png);
+    background-size:cover;
+    background-position: center center;
+    height: 60px;
+    width: 60px;
+    border-style: solid;
+    border-radius: 10%;
+    border-color:rgb(235, 182, 182) ;
+    
+}
+#contacto .ico{
+    margin-top: 16px;
+}
+#contacto .vinc4{
+    background: #3b5998;
+    background-image:url(media/fb.png);
+    background-size:cover;
+    background-position: center center;
+    height: 60px;
+    width: 60px;
+    border-radius: 10%;
+}
+
+#contacto .cdir{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    text-align: center;
+    padding: 10px;
+
+}
+.cdir p{
+    font-size: small;
+}
+/* term con */
+#fin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(30,30,30);
+    color: white;
+    height: 80vh;
+}
+#fin h2{
+    font-size: 4vw;
+}
+#fin button{
+    font-size: 4vw;
+}
+footer{
+    background-color: rgba(230,230,230);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(75, 68, 68);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* escritorio */
+
+@media(min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #hero h1{
+        font-size: 4em;
+    }
+    /* inicia nuevo cambio2 */
+    #somosTD .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    .conte article{
+        padding: 15px;
+        display: flex;
+    }
+
+    #somosTD .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    ul.tabs li a {
+        color: rgba(0, 0, 0,0.5);
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    .conte{
+        width: 100%;
+        background: white;
+    }
+    .conte article{
+        padding: 15px;
+    }
+    .conte article p{
+        text-align: justify;
+    }
+    .conte h2{
+        margin-top: 0px;
+    }*/
+
+    #somosTD .img-container{
+        background-image: linear-gradient(0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)  ),
+            url(media/std.png);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    #somosTD .img-container2{
+        background-image: linear-gradient(0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)  ),
+            url(media/mision.png);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    #somosTD .img-container3{
+        background-image: linear-gradient(0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)  ),
+            url(media/vision.png);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    /* termina nuevo cambio2 */
+    #Trabajos .carta{
+        background-size: cover;
+        padding: 70px 7px;
+    }
+    #Trabajos .container{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+    }
+    #Trabajos .trapc{
+        display: flex;
+        justify-content:space-between;
+        
+    }
+    
+    /* trabajos term */
+    #caracteristicas .container{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        padding: 140px;
+    }
+
+    #caracteristicas .subfila{
+        padding-right: 20px;
+    }
+    /* comienza contacto */
+    #contacto{
+        padding: 50px 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: center;   
+    }
+    #contacto h1{
+        display:flex;
+        margin: 10px;
+    }
+    #contacto .logCont{
+        display: none;
+    }
+    #contacto h2{
+        display: none;
+    }
+    #contacto .tit{
+        max-width: 1400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 70px;
+        margin-top: 40px;
+    }
+    #contacto .container{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        border-radius: 0%;
+        padding: 0px ;
+        margin: auto;
+    }
+
+    #contacto .vinc1{
+        background-image:url(media/qr-llamada.png);
+        height: 80px;
+        width: 80px;
+    }
+    #contacto .vinc2{
+        background-image:url(media/qr-wp.png);
+        height: 80px;
+        width: 80px;
+    }
+    #contacto .vinc3{
+        height: 80px;
+        width: 80px;
+    }
+    #contacto .vinc4{
+        height: 80px;
+        width: 80px;
+    }
+
+    #contacto .smen{
+        padding: 10px 10px;
+    }
+    /* termina contacto */
+    #fin{
+        padding: 150px;
+    }
+    #fin h2, #fin button{
+        max-height: 18vh;
+    }
+}
